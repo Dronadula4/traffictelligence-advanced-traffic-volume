@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Volume Estimation</title>
+    <style>
+        body {
+            background-image: url("C:\project\Flask\static\traffic_bg.jpeg.jpeg");
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Traffic Volume Estimation</h1>
+    <form action="/predict" method="post">
+        <label>holiday:</label>
+        <select name="holiday">
+            <option value="None">None</option>
+            <option value="Holiday">Holiday</option>
+        </select><br><br>
+        <label>temp:</label><input type="text" name="temp"><br><br>
+        <label>rain:</label><input type="text" name="rain"><br><br>
+        <label>snow:</label><input type="text" name="snow"><br><br>
+        <label>weather:</label>
+        <select name="weather">
+            <option value="Clear">Clear</option>
+            <option value="Mist">Mist</option>
+            <option value="Clouds">Clouds</option>
+            <option value="Rain">Rain</option>
+            <option value="Snow">Snow</option>
+            <option value="Drizzle">Drizzle</option>
+            <option value="Thunderstorm">Thunderstorm</option>
+        </select><br><br>
+        <label>year:</label><input type="text" name="year"><br><br>
+        <label>month:</label><input type="text" name="month"><br><br>
+        <label>day:</label><input type="text" name="day"><br><br>
+        <label>hours:</label><input type="text" name="hours"><br><br>
+        <label>minutes:</label><input type="text" name="minutes"><br><br>
+        <label>seconds:</label><input type="text" name="seconds"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
